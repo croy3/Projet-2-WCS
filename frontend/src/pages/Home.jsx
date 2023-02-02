@@ -1,9 +1,11 @@
 import Counter from "../components/Counter";
 import logo from "../assets/logo.svg";
+import MainHeader from "../components/header";
 
 export default function Home() {
   return (
     <header className="App-header">
+      <MainHeader />
       <img src={logo} className="App-logo" alt="logo" />
       <p>Hello Vite + React !</p>
 
