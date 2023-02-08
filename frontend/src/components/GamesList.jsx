@@ -3,6 +3,7 @@ import axios from "axios";
 import PropTypes from "prop-types";
 import SortContainer from "./SortContainer";
 import Game from "./Game";
+import "../App.css";
 
 function GamesList({ searchValue, setSearchValue }) {
   const [data, setData] = useState([]);
@@ -41,11 +42,13 @@ function GamesList({ searchValue, setSearchValue }) {
       <button type="button" onClick={() => setPage(page - 1)}>
         Page précédente
       </button>
-      {data
-        .filter((gameChoice) => gameChoice.name.toLowerCase())
-        .map((game) => (
-          <Game key={game.id} game={game} data={data} />
-        ))}
+      <div className="games-list">
+        {data
+          .filter((gameChoice) => gameChoice.name.toLowerCase())
+          .map((game) => (
+            <Game key={game.id} game={game} data={data} />
+          ))}
+      </div>
       <button type="button" onClick={() => setPage(page + 1)}>
         Page suivante
       </button>

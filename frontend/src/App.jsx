@@ -1,6 +1,5 @@
 import { useState } from "react";
 import GamesList from "./components/GamesList";
-
 import "./App.css";
 
 function App() {

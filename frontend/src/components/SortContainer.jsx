@@ -68,57 +68,58 @@ function SortContainer({ setPlatform, setGenre }) {
           </ul>
         </li>
       </ul>
+      <br />
       <ul>
         <li className="roll">
-          <a href="./" title="genre">
+          <button type="button" title="genre">
             Genre
-          </a>
+          </button>
 
           <ul className="submenu">
             <li>
-              <a
-                href="./"
+              <button
+                type="button"
                 title="adventure"
                 onClick={(e) => setGenre(e.target.title)}
               >
                 Aventure
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./"
+              <button
+                type="button"
                 title="action"
                 onClick={(e) => setGenre(e.target.title)}
               >
                 Action
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./"
+              <button
+                type="button"
                 title="adventure"
                 onClick={(e) => setGenre(e.target.title)}
               >
                 Indie
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./"
+              <button
+                type="button"
                 title="strategy"
                 onClick={(e) => setGenre(e.target.title)}
               >
                 Strategy
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./"
+              <button
+                type="button"
                 title="casual"
                 onClick={(e) => setGenre(e.target.title)}
               >
                 Casual
-              </a>
+              </button>
             </li>
             <li>
               <button
