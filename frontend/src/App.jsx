@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <GamesList searchValue={value} setSearchValue={setValue} />
-      <p>coucou</p>
     </div>
   );
 }
