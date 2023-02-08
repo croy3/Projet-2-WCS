@@ -1,12 +1,10 @@
-import Home from "./pages/Home";
-
 import "./App.css";
+import Presentation from "./components/Presentation";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <Presentation id={1000} />
     </div>
   );
 }
