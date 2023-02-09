@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.Header {
+.header-main {
   background-color: gray;
   display: grid;
   grid-template-columns: 10% 1fr;
@@ -10,11 +10,30 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.Logo {
+.header-logo {
   grid-area: 1 / 1 / 2 / 2;
 }
-.title {
+.header-title {
   text-align: center;
   align-self: center;
   grid-area: 1 / 2 / 2 / 3;
+}
+
+@media screen and (max-width: 560px) {
+  .header-main {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .header-logo {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .header-title {
+    text-align: right;
+    align-self: center;
+    grid-area: 1 / 2 / 2 / 3;
+  }
 }
