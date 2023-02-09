@@ -1,10 +1,12 @@
-import Home from "./pages/Home";
+import { useState } from "react";
+import GamesList from "./components/GamesList";
+import "./App.css";
 
 function App() {
+  const [value, setValue] = useState("");
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <GamesList searchValue={value} setSearchValue={setValue} />
     </div>
   );
 }

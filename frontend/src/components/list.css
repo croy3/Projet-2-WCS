@@ -1,0 +1,22 @@
+#list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 40px;
+}
+
+#game {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 300px;
+  min-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#game-image {
+  width: 100%;
+}
