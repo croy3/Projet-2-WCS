@@ -43,11 +43,9 @@ function GamesList({ searchValue, setSearchValue }) {
         Page précédente
       </button>
       <div className="games-list">
-        {data
-          .filter((gameChoice) => gameChoice.name.toLowerCase())
-          .map((game) => (
-            <Game key={game.id} game={game} data={data} />
-          ))}
+        {data.map((game) => (
+          <Game key={game.id} game={game} data={data} />
+        ))}
       </div>
       <button type="button" onClick={() => setPage(page + 1)}>
         Page suivante
