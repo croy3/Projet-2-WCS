@@ -1,7 +1,33 @@
-import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import "../styles/sortContainer.css";
 
-function SortContainer({ setPlatform, setGenre }) {
+function SortContainer({
+  setPlatform,
+  setGenre,
+  setPlatformName,
+  setGenreName,
+}) {
+  const [genreList, setGenreList] = useState([]);
+  const [platformList, setPlatformList] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.rawg.io/api/genres?key=453247c1c78a4a88aa6594a59227801b`
+      )
+      .then((response) => setGenreList(response.data.results));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.rawg.io/api/platforms?key=453247c1c78a4a88aa6594a59227801b`
+      )
+      .then((response) => setPlatformList(response.data.results));
+  }, []);
+
   return (
     <div id="sidebar">
       <ul>
@@ -11,170 +37,40 @@ function SortContainer({ setPlatform, setGenre }) {
           </a>
 
           <ul className="submenu">
-            <li>
-              <a
-                href="./"
-                title="4"
-                onClick={(e) => setPlatform(e.target.title)}
+            {platformList.map((platform) => (
+              <button
+                type="button"
+                key={platform.id}
+                onClick={() => {
+                  setPlatform(platform.id);
+                  setPlatformName(platform.name);
+                }}
               >
-                PC
-              </a>
-            </li>
-            <li>
-              <a
-                href="./"
-                title="18"
-                onClick={(e) => setPlatform(e.target.title)}
-              >
-                Playstation 4
-              </a>
-            </li>
-            <li>
-              <a
-                href="./"
-                title="187"
-                onClick={(e) => setPlatform(e.target.title)}
-              >
-                Playstation 5
-              </a>
-            </li>
-            <li>
-              <a
-                href="./"
-                title="14"
-                onClick={(e) => setPlatform(e.target.title)}
-              >
-                Xbox 360
-              </a>
-            </li>
-            <li>
-              <a
-                href="./"
-                title="186"
-                onClick={(e) => setPlatform(e.target.title)}
-              >
-                Xbox series X|S
-              </a>
-            </li>
-            <li>
-              <a
-                href="./"
-                title="7"
-                onClick={(e) => setPlatform(e.target.title)}
-              >
-                Switch
-              </a>
-            </li>
+                {platform.name}
+              </button>
+            ))}
           </ul>
         </li>
       </ul>
-      <br />
       <ul>
         <li className="roll">
-          <button type="button" title="genre">
+          <a href="./" title="genre">
             Genre
-          </button>
+          </a>
 
           <ul className="submenu">
-            <li>
+            {genreList.map((genre) => (
               <button
                 type="button"
-                title="adventure"
-                onClick={(e) => setGenre(e.target.title)}
+                key={genre.id}
+                onClick={() => {
+                  setGenre(genre.slug);
+                  setGenreName(genre.name);
+                }}
               >
-                Aventure
+                {genre.name}
               </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="action"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Action
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="adventure"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Indie
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="strategy"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Strategy
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="casual"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Casual
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="simulation"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Simulation
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="arcade"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Arcade
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="racing"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Racing
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="sports"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Sports
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="family"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                Family
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="role-playing-games-rpg"
-                onClick={(e) => setGenre(e.target.title)}
-              >
-                RPG
-              </button>
-            </li>
+            ))}
           </ul>
         </li>
       </ul>
@@ -183,8 +79,10 @@ function SortContainer({ setPlatform, setGenre }) {
 }
 
 SortContainer.propTypes = {
-  setPlatform: PropTypes.func.isRequired,
+  setPlatform: PropTypes.string.isRequired,
   setGenre: PropTypes.func.isRequired,
+  setPlatformName: PropTypes.func.isRequired,
+  setGenreName: PropTypes.func.isRequired,
 };
 
 export default SortContainer;
