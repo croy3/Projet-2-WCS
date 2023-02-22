@@ -12,13 +12,12 @@ function parseDescription(str) {
   );
 }
 
-function Presentation({ id }) {
+function Presentation({ gameId }) {
   const [game, setGame] = useState([]);
-
   useEffect(() => {
     axios
       .get(
-        `https://api.rawg.io/api/games/${id}?key=2615651b79424162a332ce878d066b07`
+        `https://api.rawg.io/api/games/${gameId}?key=2615651b79424162a332ce878d066b07`
       )
       .then((res) => setGame(res.data));
   }, []);
@@ -41,7 +40,7 @@ function Presentation({ id }) {
   );
 }
 Presentation.propTypes = {
-  id: PropTypes.number.isRequired,
+  gameId: PropTypes.number.isRequired,
 };
 
 export default Presentation;
