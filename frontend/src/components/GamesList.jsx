@@ -59,7 +59,6 @@ function GamesList({ setGameId, gameId, platform, genre }) {
 export default GamesList;
 
 GamesList.propTypes = {
-  searchValue: PropType.string.isRequired,
   setGameId: PropType.number.isRequired,
   gameId: PropType.number.isRequired,
   platform: PropType.string.isRequired,
