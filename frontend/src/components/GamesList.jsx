@@ -42,13 +42,20 @@ function GamesList({ setGameId, gameId, platform, genre }) {
           .filter((gameChoice) => gameChoice.name.toLowerCase())
           .map((game) => (
             <SwiperSlide>
-              <Game
-                key={gameId}
-                game={game}
-                data={data}
-                gameId={gameId}
-                setGameId={setGameId}
-              />
+              <button
+                type="button"
+                onClick={() => {
+                  setGameId(parseInt(game.id, 10));
+                }}
+              >
+                <Game
+                  key={gameId}
+                  game={game}
+                  data={data}
+                  gameId={gameId}
+                  setGameId={setGameId}
+                />
+              </button>
             </SwiperSlide>
           ))}
       </Swiper>

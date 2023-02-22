@@ -32,7 +32,9 @@ function App() {
         platformName={platformName}
         className="games-list"
       />
-      <Presentation id={1000} />
+      {gameId ? (
+        <Presentation key={`presentation-${gameId}`} gameId={gameId} />
+      ) : null}
       <Footer />
     </div>
   );
