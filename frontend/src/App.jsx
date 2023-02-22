@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import SortContainer from "./components/SortContainer";
 
 function App() {
-  const [value, setValue] = useState("");
   const [platform, setPlatform] = useState("4");
   const [genre, setGenre] = useState("action");
   const [gameId, setGameId] = useState("");
@@ -24,7 +23,6 @@ function App() {
         platformName={platformName}
       />
       <GamesList
-        searchValue={value}
         platform={platform}
         setPlatform={setPlatform}
         genre={genre}

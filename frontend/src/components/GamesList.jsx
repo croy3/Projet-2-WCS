@@ -8,13 +8,13 @@ import Game from "./Game";
 import "../styles/App.css";
 import "../styles/list.css";
 
-function GamesList({ searchValue, setGameId, gameId, platform, genre }) {
+function GamesList({ setGameId, gameId, platform, genre }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     const timeout = setTimeout(() => {
       axios
         .get(
-          `https://api.rawg.io/api/games?key=453247c1c78a4a88aa6594a59227801b&genres=${genre}&platforms=${platform}&search=${searchValue}`
+          `https://api.rawg.io/api/games?key=453247c1c78a4a88aa6594a59227801b&genres=${genre}&platforms=${platform}`
         )
         .then((res) => {
           setData(res.data.results);
@@ -22,7 +22,7 @@ function GamesList({ searchValue, setGameId, gameId, platform, genre }) {
     }, 700);
 
     return () => clearTimeout(timeout);
-  }, [searchValue, platform, genre]);
+  }, [platform, genre]);
 
   return (
     <div id="list">
