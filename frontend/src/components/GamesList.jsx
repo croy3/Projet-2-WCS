@@ -1,20 +1,20 @@
 import { React, useEffect, useState } from "react";
 import axios from "axios";
-import PropTypes from "prop-types";
-import SortContainer from "./SortContainer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Keyboard, Pagination, A11y } from "swiper";
+import PropType from "prop-types";
+import "swiper/swiper-bundle.css";
 import Game from "./Game";
-import "../App.css";
+import "../styles/App.css";
+import "../styles/list.css";
 
-function GamesList({ searchValue, setSearchValue }) {
+function GamesList({ setGameId, gameId, platform, genre }) {
   const [data, setData] = useState([]);
-  const [page, setPage] = useState(1);
-  const [platform, setPlatform] = useState("4");
-  const [genre, setGenre] = useState("action");
   useEffect(() => {
     const timeout = setTimeout(() => {
       axios
         .get(
-          `https://api.rawg.io/api/games?key=5e731b63837f49759cde8b1cb3505d80&genres=${genre}&platforms=${platform}&search=${searchValue}&page_size=5&page=${page}`
+          `https://api.rawg.io/api/games?key=453247c1c78a4a88aa6594a59227801b&genres=${genre}&platforms=${platform}`
         )
         .then((res) => {
           setData(res.data.results);
@@ -22,41 +22,45 @@ function GamesList({ searchValue, setSearchValue }) {
     }, 700);
 
     return () => clearTimeout(timeout);
-  }, [page, searchValue, platform, genre]);
+  }, [platform, genre]);
 
   return (
-    <div>
-      <SortContainer
-        platform={platform}
-        setPlatform={setPlatform}
-        genre={genre}
-        setGenre={setGenre}
-      />
-      <input
-        type="text"
-        value={searchValue}
-        onChange={(e) => {
-          setSearchValue(e.target.value);
-        }}
-      />
-      <button type="button" onClick={() => setPage(page - 1)}>
-        Page précédente
-      </button>
-      <div className="games-list">
-        {data.map((game) => (
-          <Game key={game.id} game={game} data={data} />
-        ))}
-      </div>
-      <button type="button" onClick={() => setPage(page + 1)}>
-        Page suivante
-      </button>
+    <div id="list">
+      <Swiper
+        modules={[Navigation, A11y, Keyboard, Pagination]}
+        pagination
+        navigation
+        a11y
+        keyboard
+        effect
+        speed={800}
+        slidesPerView={4}
+        loop
+        className="my-swiper"
+      >
+        {data
+          .filter((gameChoice) => gameChoice.name.toLowerCase())
+          .map((game) => (
+            <SwiperSlide>
+              <Game
+                key={gameId}
+                game={game}
+                data={data}
+                gameId={gameId}
+                setGameId={setGameId}
+              />
+            </SwiperSlide>
+          ))}
+      </Swiper>
     </div>
   );
 }
 
-GamesList.propTypes = {
-  searchValue: PropTypes.string.isRequired,
-  setSearchValue: PropTypes.func.isRequired,
-};
-
 export default GamesList;
+
+GamesList.propTypes = {
+  setGameId: PropType.number.isRequired,
+  gameId: PropType.number.isRequired,
+  platform: PropType.string.isRequired,
+  genre: PropType.string.isRequired,
+};

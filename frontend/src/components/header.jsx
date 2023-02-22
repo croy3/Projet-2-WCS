@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "../styles/header.css";
 
 function MainHeader() {
   return (
@@ -9,7 +9,7 @@ function MainHeader() {
         alt="temp"
         className="header-logo"
       />
-      <h1 className="header-title">Titre de la page</h1>
+      <h1 className="header-title">KRITIKZ</h1>
     </div>
   );
 }

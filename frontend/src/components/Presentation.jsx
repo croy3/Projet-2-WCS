@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
-import "./Presentation.css";
+import "../styles/Presentation.css";
 
 function parseDescription(str) {
   const tab = str?.split(/<[/ a-z]+>/);

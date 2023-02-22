@@ -2,15 +2,38 @@ import { useState } from "react";
 import MainHeader from "./components/header";
 import Presentation from "./components/Presentation";
 import GamesList from "./components/GamesList";
-import "./App.css";
+import "./styles/App.css";
+import Footer from "./components/Footer";
+import SortContainer from "./components/SortContainer";
 
 function App() {
-  const [value, setValue] = useState("");
+  const [platform, setPlatform] = useState("4");
+  const [genre, setGenre] = useState("action");
+  const [gameId, setGameId] = useState("");
+  const [platformName, setPlatformName] = useState("");
   return (
-    <div className="App">
+    <div className="App" id="global-div">
       <MainHeader />
+      <SortContainer
+        platform={platform}
+        setPlatform={setPlatform}
+        genre={genre}
+        setGenre={setGenre}
+        setPlatformName={setPlatformName}
+        platformName={platformName}
+      />
+      <GamesList
+        platform={platform}
+        setPlatform={setPlatform}
+        genre={genre}
+        setGenre={setGenre}
+        gameId={gameId}
+        setGameId={setGameId}
+        platformName={platformName}
+        className="games-list"
+      />
       <Presentation id={1000} />
-      <GamesList searchValue={value} setSearchValue={setValue} />
+      <Footer />
     </div>
   );
 }

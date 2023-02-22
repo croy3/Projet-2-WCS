@@ -14,9 +14,12 @@
   min-width: 200px;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 #game-image {
   width: 100%;
+}
+
+#game-name {
+  height: 25px;
 }
