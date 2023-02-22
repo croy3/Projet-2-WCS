@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "../styles/SortContainer.css";
+import ButtonPlatform from "./ButtonPlatform";
+import ButtonGenre from "./ButtonGenre";
 
 function SortContainer({
   setPlatform,
@@ -11,7 +13,6 @@ function SortContainer({
 }) {
   const [genreList, setGenreList] = useState([]);
   const [platformList, setPlatformList] = useState([]);
-
   useEffect(() => {
     axios
       .get(
@@ -36,7 +37,9 @@ function SortContainer({
 
           <ul className="submenu">
             {platformList.map((platform) => (
-              <button
+              <ButtonPlatform
+                platform={platform}
+                setPlatform={setPlatform}
                 type="button"
                 key={platform.id}
                 onClick={() => {
@@ -44,9 +47,8 @@ function SortContainer({
                   setPlatformName(platform.name);
                 }}
                 className=" button platform-button"
-              >
-                {platform.name}
-              </button>
+                id={`${platform.i}`}
+              />
             ))}
           </ul>
         </li>
@@ -57,7 +59,9 @@ function SortContainer({
 
           <ul className="submenu">
             {genreList.map((genre) => (
-              <button
+              <ButtonGenre
+                genre={genre}
+                setGenre={setGenre}
                 type="button"
                 key={genre.id}
                 onClick={() => {
@@ -65,9 +69,7 @@ function SortContainer({
                   setGenreName(genre.name);
                 }}
                 className=" button genre-button"
-              >
-                {genre.name}
-              </button>
+              />
             ))}
           </ul>
         </li>
