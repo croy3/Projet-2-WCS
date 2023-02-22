@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "../styles/sortContainer.css";
+import "../styles/SortContainer.css";
 
 function SortContainer({
   setPlatform,
@@ -32,9 +32,7 @@ function SortContainer({
     <div id="sidebar">
       <ul>
         <li className="roll">
-          <a href="./" title="plateforme">
-            Plateforme
-          </a>
+          <h3>Plateforme</h3>
 
           <ul className="submenu">
             {platformList.map((platform) => (
@@ -45,6 +43,7 @@ function SortContainer({
                   setPlatform(platform.id);
                   setPlatformName(platform.name);
                 }}
+                className=" button platform-button"
               >
                 {platform.name}
               </button>
@@ -54,9 +53,7 @@ function SortContainer({
       </ul>
       <ul>
         <li className="roll">
-          <a href="./" title="genre">
-            Genre
-          </a>
+          <h3>Genre</h3>
 
           <ul className="submenu">
             {genreList.map((genre) => (
@@ -67,6 +64,7 @@ function SortContainer({
                   setGenre(genre.slug);
                   setGenreName(genre.name);
                 }}
+                className=" button genre-button"
               >
                 {genre.name}
               </button>
