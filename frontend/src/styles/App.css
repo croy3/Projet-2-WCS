@@ -18,5 +18,5 @@ body {
 }
 
 #global-div {
-  background: no-repeat url(wallpaper2.jpg) center/cover;
+  background: no-repeat url(wallpaper2.jpg) center/cover fixed;
 }
