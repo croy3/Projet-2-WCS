@@ -2,7 +2,7 @@ const path = require("path");
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
+// https://vitejs.dev/connfig/
 export default defineConfig({
   plugins: [react()],
   resolve: {
