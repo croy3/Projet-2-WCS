@@ -62,8 +62,7 @@ h3 {
   pointer-events: none;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background: var(--button-color-pink);
   color: rgb(22, 6, 37);
   text-shadow: none;
@@ -96,13 +95,24 @@ h3 {
   background: hsl(274, 100%, 54%);
 }
 
-.genre-button:hover,
-.genre-button:focus {
+.genre-button:hover {
   background: hsl(274, 100%, 54%);
 }
 
 .genre-button::after {
   box-shadow: 0 0 2em 0.5em hsl(274, 100%, 54%);
+}
+
+.bright-platform {
+  background: var(--button-color-pink);
+  color: rgb(22, 6, 37);
+  text-shadow: none;
+}
+
+.bright-genre {
+  background: var(--button-color-purple);
+  color: rgb(22, 6, 37);
+  text-shadow: none;
 }
 
 .chosen-filter {
