@@ -12,13 +12,12 @@ function parseDescription(str) {
   );
 }
 
-function Presentation({ id }) {
+function Presentation({ gameId }) {
   const [game, setGame] = useState([]);
-
   useEffect(() => {
     axios
       .get(
-        `https://api.rawg.io/api/games/${id}?key=2615651b79424162a332ce878d066b07`
+        `https://api.rawg.io/api/games/${gameId}?key=2615651b79424162a332ce878d066b07`
       )
       .then((res) => setGame(res.data));
   }, []);
@@ -26,7 +25,9 @@ function Presentation({ id }) {
   return (
     <div id="presentation">
       <h1>{game.name}</h1>
-      <p id="game-rating">Rating : {game.rating}</p>
+      <div id="game-rating">
+        <p>Rating : {game.rating} / 5</p>
+      </div>
       <img src={game.background_image} alt={game.name} id="game-image" />
       {parseDescription(game.description)}
       <div id="game-release-platforms">
@@ -41,7 +42,7 @@ function Presentation({ id }) {
   );
 }
 Presentation.propTypes = {
-  id: PropTypes.number.isRequired,
+  gameId: PropTypes.number.isRequired,
 };
 
 export default Presentation;
