@@ -2,8 +2,8 @@ import { React, useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard, Pagination, A11y } from "swiper";
-import PropType from "prop-types";
 import "swiper/swiper-bundle.css";
+import PropType from "prop-types";
 import Game from "./Game";
 import "../styles/App.css";
 import "../styles/list.css";
@@ -43,6 +43,7 @@ function GamesList({ setGameId, gameId, platform, genre }) {
           .map((game) => (
             <SwiperSlide>
               <button
+                id="game"
                 type="button"
                 onClick={() => {
                   setGameId(parseInt(game.id, 10));
@@ -54,6 +55,9 @@ function GamesList({ setGameId, gameId, platform, genre }) {
                   data={data}
                   gameId={gameId}
                   setGameId={setGameId}
+                  onClick={() => {
+                    setGameId(parseInt(game.id, 10));
+                  }}
                 />
               </button>
             </SwiperSlide>
