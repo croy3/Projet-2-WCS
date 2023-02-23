@@ -6,6 +6,7 @@ function Game({ game }) {
   return (
     <div
       id="game"
+      onClick={() => setGameId(game.id)}
       style={{ background: `url(${game.background_image}) center/cover` }}
     >
       <h1 id="game-name">{game.name}</h1> <br />
