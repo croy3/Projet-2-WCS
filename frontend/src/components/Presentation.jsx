@@ -25,7 +25,9 @@ function Presentation({ gameId }) {
   return (
     <div id="presentation">
       <h1>{game.name}</h1>
-      <p id="game-rating">Rating : {game.rating}</p>
+      <div id="game-rating">
+        <p>Rating : {game.rating} / 5</p>
+      </div>
       <img src={game.background_image} alt={game.name} id="game-image" />
       {parseDescription(game.description)}
       <div id="game-release-platforms">
