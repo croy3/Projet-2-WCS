@@ -3,7 +3,13 @@
   padding: 0;
 }
 .header-main {
-  background-color: gray;
+  background: rgb(41, 0, 122);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 0, 122, 0) 24%,
+    rgba(61, 7, 170, 0.2) 59%,
+    rgba(168, 36, 122, 1) 100%
+  );
   display: grid;
   grid-template-columns: 10% 1fr;
   grid-template-rows: 1fr;
@@ -12,16 +18,25 @@
 }
 .header-logo {
   grid-area: 1 / 1 / 2 / 2;
+  opacity: 100%;
+  max-height: 15rem;
 }
 .header-title {
   text-align: center;
   align-self: center;
   grid-area: 1 / 2 / 2 / 3;
+  opacity: 100%;
 }
 
 @media screen and (max-width: 560px) {
   .header-main {
-    background-color: gray;
+    background: rgb(41, 0, 122);
+    background: linear-gradient(
+      0deg,
+      rgba(41, 0, 122, 0) 24%,
+      rgba(61, 7, 170, 0.2) 59%,
+      rgba(168, 36, 122, 1) 100%
+    );
     display: grid;
     grid-template-columns: 10% 1fr;
     grid-template-rows: 1fr;
