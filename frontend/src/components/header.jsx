@@ -1,15 +1,13 @@
 import React from "react";
 import "../styles/header.css";
+import Logo from "../assets/Logo.png";
 
 function MainHeader() {
   return (
     <div className="header-main">
-      <img
-        src="http://placekitten.com/200/300"
-        alt="temp"
-        className="header-logo"
-      />
+      <img src={Logo} alt="temp" className="header-logo" />
       <h1 className="header-title">KRITIKZ</h1>
+      <br />
     </div>
   );
 }
