@@ -37,11 +37,12 @@ function GamesList({ setGameId, gameId, platform, genre }) {
         slidesPerView={4}
         loop
         className="my-swiper"
+        key={genre.id}
       >
         {data
           .filter((gameChoice) => gameChoice.name.toLowerCase())
           .map((game) => (
-            <SwiperSlide>
+            <SwiperSlide key={platform.id}>
               <button
                 id="game"
                 type="button"
@@ -70,8 +71,8 @@ function GamesList({ setGameId, gameId, platform, genre }) {
 export default GamesList;
 
 GamesList.propTypes = {
-  setGameId: PropType.number.isRequired,
-  gameId: PropType.number.isRequired,
+  setGameId: PropType.func.isRequired,
+  gameId: PropType.string.isRequired,
   platform: PropType.string.isRequired,
   genre: PropType.string.isRequired,
 };

@@ -26,7 +26,10 @@ function ButtonGenre({ genre, setGenre }) {
 
 ButtonGenre.propTypes = {
   setGenre: PropTypes.func.isRequired,
-  genre: PropTypes.string.isRequired,
+  genre: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ButtonGenre;

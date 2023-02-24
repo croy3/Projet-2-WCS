@@ -5,12 +5,7 @@ import "../styles/SortContainer.css";
 import ButtonPlatform from "./ButtonPlatform";
 import ButtonGenre from "./ButtonGenre";
 
-function SortContainer({
-  setPlatform,
-  setGenre,
-  setPlatformName,
-  setGenreName,
-}) {
+function SortContainer({ setPlatform, setGenre, setPlatformName }) {
   const [genreList, setGenreList] = useState([]);
   const [platformList, setPlatformList] = useState([]);
   useEffect(() => {
@@ -66,7 +61,6 @@ function SortContainer({
                 key={genre.id}
                 onClick={() => {
                   setGenre(genre.slug);
-                  setGenreName(genre.name);
                 }}
                 className=" button genre-button"
               />
@@ -79,10 +73,9 @@ function SortContainer({
 }
 
 SortContainer.propTypes = {
-  setPlatform: PropTypes.string.isRequired,
+  setPlatform: PropTypes.func.isRequired,
   setGenre: PropTypes.func.isRequired,
   setPlatformName: PropTypes.func.isRequired,
-  setGenreName: PropTypes.func.isRequired,
 };
 
 export default SortContainer;

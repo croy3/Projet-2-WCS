@@ -11,12 +11,10 @@ body {
   width: 100%;
 }
 
-.games-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+#global-div {
+  background: no-repeat url(wallpaper3.jpg) center/cover fixed;
 }
 
-#global-div {
-  background: no-repeat url(wallpaper2.jpg) center/cover fixed;
+h3 {
+  -webkit-text-stroke: 1px rgb(67, 66, 66);
 }
