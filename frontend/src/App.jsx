@@ -13,7 +13,7 @@ function App() {
   const [platformName, setPlatformName] = useState("");
   return (
     <div className="App" id="global-div">
-      <MainHeader />
+      <MainHeader key={3} />
       <SortContainer
         platform={platform}
         setPlatform={setPlatform}
@@ -21,6 +21,7 @@ function App() {
         setGenre={setGenre}
         setPlatformName={setPlatformName}
         platformName={platformName}
+        key={gameId}
       />
       <GamesList
         platform={platform}
@@ -31,11 +32,12 @@ function App() {
         setGameId={setGameId}
         platformName={platformName}
         className="games-list"
+        key={platform}
       />
       {gameId ? (
         <Presentation key={`presentation-${gameId}`} gameId={gameId} />
       ) : null}
-      <Footer />
+      <Footer key="footer" />
     </div>
   );
 }

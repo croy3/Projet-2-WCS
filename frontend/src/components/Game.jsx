@@ -15,6 +15,9 @@ function Game({ game }) {
 }
 
 Game.propTypes = {
-  game: PropTypes.string.isRequired,
+  game: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 export default Game;

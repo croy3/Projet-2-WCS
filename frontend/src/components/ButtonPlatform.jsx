@@ -26,7 +26,10 @@ function ButtonPlatform({ platform, setPlatform }) {
 
 ButtonPlatform.propTypes = {
   setPlatform: PropTypes.func.isRequired,
-  platform: PropTypes.string.isRequired,
+  platform: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ButtonPlatform;

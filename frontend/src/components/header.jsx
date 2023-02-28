@@ -6,7 +6,7 @@ function MainHeader() {
   return (
     <div className="header-main">
       <img src={Logo} alt="temp" className="header-logo" />
-      <h1 className="header-title">XX_KRITIKZ_XX</h1>
+      <h1 className="header-title">xX_KRITIKZ_Xx</h1>
       <br />
     </div>
   );
