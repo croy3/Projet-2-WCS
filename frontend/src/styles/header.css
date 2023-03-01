@@ -15,11 +15,15 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  height: 250px;
 }
 .header-logo {
   grid-area: 1 / 1 / 2 / 2;
   opacity: 100%;
   max-height: 15rem;
+  /* position: fixed; */
+  z-index: 0;
+  transform: translateX(650px) scale(0.7);
 }
 .header-title {
   text-align: center;
@@ -45,10 +49,12 @@
   }
   .header-logo {
     grid-area: 1 / 1 / 2 / 2;
+    transform: scale(0.5);
   }
   .header-title {
     text-align: right;
     align-self: center;
     grid-area: 1 / 2 / 2 / 3;
+    transform: scale(0.5);
   }
 }

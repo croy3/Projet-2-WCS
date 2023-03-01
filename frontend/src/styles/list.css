@@ -1,9 +1,9 @@
 #list {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  background: rgba(233, 227, 230, 0.213);
+  background: rgba(255, 253, 254, 0.173);
   height: 350px;
   backdrop-filter: blur(10px);
 }
@@ -11,17 +11,19 @@
 #game {
   margin: 10px;
   padding: 10px;
-  border: solid 0px rgb(0, 0, 0);
-  border-radius: 5px;
   height: 300px;
   width: 412px;
   display: flex;
+  align-self: center;
   flex-wrap: wrap;
   transform: scale(1.1);
 }
 
 #game-image {
   width: 100%;
+  z-index: 22;
+  border-radius: 10px;
+  border: 2px black solid;
 }
 
 #game-name {
@@ -30,13 +32,24 @@
 }
 
 #game:hover {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
-  transition: 500ms;
-  transform: scale(1.09);
+  transition: 900ms;
+  transform: scale(1.08);
   z-index: 10;
   -webkit-text-stroke: 1px black;
 }
 
 #game:hover #game-name {
   display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

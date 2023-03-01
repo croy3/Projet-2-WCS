@@ -1,8 +1,12 @@
+/* eslint-disable import/no-unresolved */
 import { React, useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard, Pagination, A11y } from "swiper";
-import "swiper/swiper-bundle.css";
+import { Navigation, Keyboard, Pagination } from "swiper";
+// import "swiper/swiper-bundle.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import PropType from "prop-types";
 import Game from "./Game";
 import "../styles/App.css";
@@ -27,41 +31,53 @@ function GamesList({ setGameId, gameId, platform, genre }) {
   return (
     <div id="list">
       <Swiper
-        modules={[Navigation, A11y, Keyboard, Pagination]}
+        modules={[Navigation, Keyboard, Pagination]}
         pagination
         navigation
-        a11y
         keyboard
-        effect
+        slidesPerView={1}
+        // spaceBetween={}
         speed={800}
-        slidesPerView={4}
         loop
         className="my-swiper"
         key={genre.id}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1350: {
+            slidesPerView: 3,
+          },
+          1780: {
+            slidesPerView: 4,
+          },
+        }}
       >
         {data
           .filter((gameChoice) => gameChoice.name.toLowerCase())
           .map((game) => (
-            <SwiperSlide key={platform.id}>
-              <button
-                id="game"
-                type="button"
-                onClick={() => {
-                  setGameId(parseInt(game.id, 10));
-                }}
-              >
-                <Game
-                  key={gameId}
-                  game={game}
-                  data={data}
-                  gameId={gameId}
-                  setGameId={setGameId}
+            <div className="list-game">
+              <SwiperSlide key={platform.id}>
+                <button
+                  id="game-list-button"
+                  type="button"
                   onClick={() => {
                     setGameId(parseInt(game.id, 10));
                   }}
-                />
-              </button>
-            </SwiperSlide>
+                >
+                  <Game
+                    key={gameId}
+                    game={game}
+                    data={data}
+                    gameId={gameId}
+                    setGameId={setGameId}
+                    onClick={() => {
+                      setGameId(parseInt(game.id, 10));
+                    }}
+                  />
+                </button>
+              </SwiperSlide>
+            </div>
           ))}
       </Swiper>
     </div>
