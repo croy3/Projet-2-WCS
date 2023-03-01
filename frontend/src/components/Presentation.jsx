@@ -24,7 +24,7 @@ function Presentation({ gameId }) {
 
   return (
     <div id="presentation">
-      <h1>{game.name}</h1>
+      <h1 id="game-title">{game.name}</h1>
       <div id="game-rating">
         <p>Rating : {game.rating} / 5</p>
       </div>
