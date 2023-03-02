@@ -1,5 +1,6 @@
 import PropType from "prop-types";
 import data from "../assets/ConsolesList.json";
+import "../styles/ConsoleSumup.css";
 
 function ConsoleSumup({ consoleSumup }) {
   const dataStringify = JSON.stringify(data);
@@ -13,7 +14,7 @@ function ConsoleSumup({ consoleSumup }) {
     <div>
       {info ? (
         <div>
-          <h2>{info.Console}</h2>
+          <h2>{info.Console}</h2> <br />
           <p>{info.Descriptif}</p> <br />
           <p>Année de sortie : {info["Année de sortie"]}</p>
           <p>Fabriquant : {info.Fabriquant}</p>
