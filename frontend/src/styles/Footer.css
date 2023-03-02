@@ -1,0 +1,14 @@
+footer
+  {
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo-footer 
+{
+  transform: scale(0.22)
+}
+
+

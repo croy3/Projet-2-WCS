@@ -1,16 +1,19 @@
 import { useState } from "react";
+import ConsoleSumup from "./components/ConsoleSumup";
 import MainHeader from "./components/header";
 import Presentation from "./components/Presentation";
 import GamesList from "./components/GamesList";
 import "./styles/App.css";
 import Footer from "./components/Footer";
 import SortContainer from "./components/SortContainer";
+import SocialFollow from "./components/SocialFollow";
 
 function App() {
   const [platform, setPlatform] = useState("4");
   const [genre, setGenre] = useState("action");
   const [gameId, setGameId] = useState("");
   const [platformName, setPlatformName] = useState("");
+  const [consoleSumup, setConsoleSumup] = useState("");
   return (
     <div className="App" id="global-div">
       <MainHeader key={3} />
@@ -35,9 +38,15 @@ function App() {
         key={platform}
       />
       {gameId ? (
-        <Presentation key={`presentation-${gameId}`} gameId={gameId} />
+        <Presentation
+          key={`presentation-${gameId}`}
+          gameId={gameId}
+          setConsoleSumup={setConsoleSumup}
+        />
       ) : null}
+      <ConsoleSumup consoleSumup={consoleSumup} />
       <Footer key="footer" />
+      <SocialFollow />
     </div>
   );
 }
