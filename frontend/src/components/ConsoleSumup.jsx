@@ -12,7 +12,7 @@ function ConsoleSumup({ consoleSumup }) {
   return (
     <div>
       {info ? (
-        <div>
+        <div key={info.Console}>
           <h2>{info.Console}</h2> <br />
           <p>{info.Descriptif}</p> <br />
           <p>Année de sortie : {info["Année de sortie"]}</p>

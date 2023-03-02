@@ -88,7 +88,7 @@ export default GamesList;
 
 GamesList.propTypes = {
   setGameId: PropType.func.isRequired,
-  gameId: PropType.string.isRequired,
-  platform: PropType.string.isRequired,
-  genre: PropType.string.isRequired,
+  gameId: PropType.number.isRequired,
+  platform: PropType.number.isRequired,
+  genre: PropType.number.isRequired,
 };
