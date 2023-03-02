@@ -19,8 +19,6 @@
 #game-image {
   width: 100%;
   z-index: 22;
-  border-radius: 10px;
-  border: 2px black solid;
 }
 
 #game-name {
