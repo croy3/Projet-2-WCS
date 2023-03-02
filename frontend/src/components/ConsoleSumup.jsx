@@ -1,5 +1,6 @@
 import PropType from "prop-types";
 import data from "../assets/ConsolesList.json";
+import "../styles/ConsoleSumup.css";
 
 function ConsoleSumup({ consoleSumup }) {
   const dataStringify = JSON.stringify(data);
