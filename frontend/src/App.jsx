@@ -9,9 +9,9 @@ import SortContainer from "./components/SortContainer";
 import SocialFollow from "./components/SocialFollow";
 
 function App() {
-  const [platform, setPlatform] = useState("4");
-  const [genre, setGenre] = useState("action");
-  const [gameId, setGameId] = useState("");
+  const [platform, setPlatform] = useState(1);
+  const [genre, setGenre] = useState(3);
+  const [gameId, setGameId] = useState(0);
   const [platformName, setPlatformName] = useState("");
   const [consoleSumup, setConsoleSumup] = useState("");
   return (
