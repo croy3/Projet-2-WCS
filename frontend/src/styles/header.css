@@ -21,9 +21,8 @@
   grid-area: 1 / 1 / 2 / 2;
   opacity: 100%;
   max-height: 15rem;
-  /* position: fixed; */
   z-index: 0;
-  transform: translateX(650px) scale(0.7);
+  transform: translateX(250px) scale(0.7);
 }
 .header-title {
   text-align: center;
@@ -32,7 +31,7 @@
   opacity: 100%;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1130px) and (min-width: 500px) {
   .header-main {
     background: rgb(41, 0, 122);
     background: linear-gradient(
@@ -49,12 +48,14 @@
   }
   .header-logo {
     grid-area: 1 / 1 / 2 / 2;
-    transform: scale(0.5);
+    max-height: 15rem;
+    z-index: 0;
+    transform: translateX(150px) scale(0.7);
   }
   .header-title {
     text-align: right;
     align-self: center;
     grid-area: 1 / 2 / 2 / 3;
-    transform: scale(0.5);
+    transform: translateX(-100px) scale(0.8);
   }
 }
