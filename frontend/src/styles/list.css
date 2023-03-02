@@ -73,7 +73,7 @@
 
   #game-name {
     display: flex;
-    transform: translateX(-10%);
+    /* transform: translateX(-10%); */
     align-self: center;
     -webkit-text-stroke: 1px black;
     color: rgb(255, 255, 255);
