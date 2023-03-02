@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/SocialFollow.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faYoutube,
   faFacebook,

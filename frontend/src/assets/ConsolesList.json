@@ -514,7 +514,7 @@
     "Ventes, en millions": 33,
     "Prix à la sortie, en USD": "",
     "Descriptif": "Issu du monde du logiciel libre, le noyau Linux ne concerne que 2% des ordinateurs familiaux et n'occupe donc logiquement pas une place prépondérante dans le marché du jeu video. Ormis quelques copies inspirées de titres phares, le noyau se limitait à de rares portages. Cependant, depuis peu, si ces derniers restaient faibles de par l'utilisation massives des bibliothèques propriétaires Windows sur PC, Linux rattrape à grand pas son retard et vise à terme le même catalogue. La multiplication des terminaux tournants sur son système et l'opportunité de s'affranchir du marché fermé et ultra-dominé, y a fait migrer de nombreux developpeurs et constructeurs.",
-    "Titres phares": ""
+    "Titres phares": "Tuxracing, Freeciv"
   },
   {
     "Console": "MacOS",
@@ -524,7 +524,7 @@
     "Bits": "",
     "Ventes, en millions": "",
     "Prix à la sortie, en USD": "",
-    "Descriptif": "",
+    "Descriptif": "MacOS est un système d’exploitation partiellement propriétaire développé et commercialisé par Apple depuis 1998. MacOS est le successeur de Mac OS Classic, la principale série des systèmes d'exploitation d'Apple depuis 1984. Contrairement à ses prédécesseurs, macOS fait partie de la famille des systèmes d'exploitation Unix. A ce titre, il compte peu de titres, mais plus que Linux grâce à un levier de négaciation avec les éditeurs à la sortie des titres. Paradoxalement, la société pourrait également bénéficier des efforts de Steam envers Linux, pour voir sa ludothèque grossir proportionnellement.",
     "Titres phares": ""
   },
   {

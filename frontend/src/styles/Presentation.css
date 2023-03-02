@@ -62,7 +62,7 @@
   display: inline;
 }
 
-@media screen and (max-width : 900px){
+@media screen and (max-width: 900px) {
   #presentation {
     display: flex;
     flex-direction: column;

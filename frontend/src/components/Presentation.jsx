@@ -34,7 +34,8 @@ function Presentation({ gameId, setConsoleSumup }) {
         <p id="game-release">Released : {game.released}</p>
         <div id="game-platforms">
           {game.platforms?.map((element) => (
-            <p
+            <button
+              type="button"
               onClick={() => {
                 setConsoleSumup(element.platform.name);
               }}
@@ -42,7 +43,7 @@ function Presentation({ gameId, setConsoleSumup }) {
             >
               {" "}
               {element.platform.name}{" "}
-            </p>
+            </button>
           ))}
         </div>
       </div>
@@ -51,6 +52,7 @@ function Presentation({ gameId, setConsoleSumup }) {
 }
 Presentation.propTypes = {
   gameId: PropTypes.number.isRequired,
+  setConsoleSumup: PropTypes.func.isRequired,
 };
 
 export default Presentation;
