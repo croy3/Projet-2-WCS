@@ -8,7 +8,7 @@
     "Ventes, en millions": 2800,
     "Prix à la sortie, en USD": 0,
     "Descriptif": "Système d'exploitation fondé sur le noyau Linux à destination des smartphones, dont la plaforme de distribution logicielle et videoludique est assurée par Google Play. Avec 72% du marché des mobiles, l'offre est pléthorique même si on ne compte que peu de gros titres, qui sont majoritairement des portages.",
-    "Titres phares": ""
+    "Titres phares": "Des portages, essentiellement"
   },
   {
     "Console": "Apple II",
@@ -140,7 +140,7 @@
     "Ventes, en millions": 21,
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Première console de SEGA à l'international, la firme oppose à la NES une version techniquement supérieure, mais son succès sera surtout marqué en Europe et au Brésil. Avec des développeurs tiers déjà sous contrat avec son concurrent, la ludothèque manque de titres ambitieux et n'est pas très grande. Cependant, ses efforts de déploiement rapide à l'étranger paieront et sauveront la console.",
-    "Titres phares": ""
+    "Titres phares": "Alex Kidd, Sonic"
   },
   {
     "Console": "Genesis",
@@ -150,8 +150,8 @@
     "Bits": 16,
     "Ventes, en millions": 31,
     "Prix à la sortie, en USD": 190,
-    "Descriptif": "Souhaitant détroner une NES qui commence à accuser le poids des années, Sega lance une nouvelle console d'une nouvelle génération, en misant sur un développement rapide à l'international. La campagne publicitaire est agressive, lance la célèbre guerre Sega / Nintendo, et vise les jeunes adultes avec son ton cool et rebelle à l'instar de son nouveau héros Sonic. La Mega-Drive (baptisée Genesis aux USA) s'oriente vers une ludothèque arcade (elle en reprend une partie de son catalogue) et sportive. En dépit de ses efforts, elle restera dans l'ombre de Nintendo. De nombreux accessoires et extensions sortiront pour accroître les fonctionnalités et la durée de vie de la console, mais le public ne suivra pas au détriment de la santé financière de la marque.",
-    "Titres phares": "Sonic, Mortal Kombat, Mario Land"
+    "Descriptif": "Nous la connaissaons sous le nom de Mega-Drive en Europe. Souhaitant détroner une NES qui commence à accuser le poids des années, Sega lance une nouvelle console d'une nouvelle génération, en misant sur un développement rapide à l'international. La campagne publicitaire est agressive, lance la célèbre guerre Sega / Nintendo, et vise les jeunes adultes avec son ton cool et rebelle à l'instar de son nouveau héros Sonic. Elle s'oriente vers une ludothèque arcade (et en reprend une partie de son catalogue) et sportive. En dépit de ses efforts, elle restera dans l'ombre de Nintendo. De nombreux accessoires et extensions sortiront pour accroître les fonctionnalités et la durée de vie de la console, mais le public ne suivra pas au détriment de la santé financière de la marque.",
+    "Titres phares": "Sonic II, Aladdin, LandStalker, Streets of Rage 2"
   },
   {
     "Console": "SEGA CD",
@@ -162,7 +162,7 @@
     "Ventes, en millions": 6,
     "Prix à la sortie, en USD": 300,
     "Descriptif": "Extension de la Genesis/Mega Drive lui permettant la lecture de CD-Rom en plus des traditionnelles cartouches, ouvrant la voie aux jeux en Full Motion Video (FMV). Des jeux tenant plus du film et sans intéraction, un prix prohibitif, des temps de chargement très longs sur cette technologie émergeante tirant sur une console déjà agée et les rumeurs de sortie de nouvelles consoles sous peu ont rapidement enterré ce périphérique au catalogue très mince. On la trouve aussi sous le nom de Mega-CD.",
-    "Titres phares": ""
+    "Titres phares": "Des portages Genesis"
   },
   {
     "Console": "SEGA 32X",
@@ -173,7 +173,7 @@
     "Ventes, en millions": "0,6",
     "Prix à la sortie, en USD": 160,
     "Descriptif": "Pressé par la puissante Jaguar et les nouvelles d'une console de Sony du meme calibre, Sega sort en hâte une extension pour sa Mega-Drive/Genesis pour la convertir aux 32 bits. Malgré un bas prix, les développeurs rechignent à se former sur cette nouvelle architecture alors que la nouvelle génération de console est annoncée, y compris dans par Sega avec la Saturne à venir, ce qui laisse transparaitre de gros soucis de communication et de direction qui ne sait quelle console mettre en avant. Avec peu de jeux annoncés et une absence de gain sur la ludothèque dejà existante, l'échec critique et commercial est cinglant pour la marque.",
-    "Titres phares": ""
+    "Titres phares": "Des portages Genesis"
   },
   {
     "Console": "SNES",
@@ -184,7 +184,7 @@
     "Ventes, en millions": 49,
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Raillé par SEGA et sa 16 bits, Nintendo tarde à sortir sa nouvelle console, pour ne pas concurrencer une NES qui se vend toujours bien malgré son matériel daté, Nintendo lance la Super Nintendo.  En capitalisant catalogue riche de son ainée, tout en y proposant des innovations techniques plus avancées que la concurrence (effets simili 3D et de zoom) dès les premiers titres et avec des choix ergonomiques qui feront l'unanimité (son excellente manette), la SNES est un carton. Au ton agressif et transgressif de la Genesis, Nintendo préfère le ton cartoon et enfantin, ce qui donne confiance aux enfants et aux parents, sans pour autant renier sur l'exigeance technique des titres. Au fil des ans, la stratégie de Nintendo paiera et ainsi rattrapera son retard initial.",
-    "Titres phares": ""
+    "Titres phares": "Street Fighter II, Super Mario World II, Donkey Kong Country, Star Wing"
   },
   {
     "Console": "Game Gear",
@@ -195,7 +195,7 @@
     "Ventes, en millions": "10,5",
     "Prix à la sortie, en USD": 150,
     "Descriptif": "Concue pour détroner la Game Boy, elle en est l'exact opposé sur le plan technique, ce qui causera sa perte malgré elle : sa puissance et son affichage couleur se feront au prix d'une consommation et d'un encombrement excessif, avec un catalogue bien plus faible...",
-    "Titres phares": ""
+    "Titres phares": "Sonic, Golden Axe"
   },
   {
     "Console": "Game Boy",
@@ -206,7 +206,7 @@
     "Ventes, en millions": 120,
     "Prix à la sortie, en USD": 90,
     "Descriptif": "Reine du jeu de poche, cette console connu une étonnante longévité en dépit d'un matériel faiblard dès sa sortie. Un bas prix, une grande autonomie, un faible encombrement, ses accessoires et déclinaisons futures, un catalogue riche avec le second souffle du lancement de Pokémon en font un incontournable.",
-    "Titres phares": ""
+    "Titres phares": "Zelda: Link's awakening, Wario Land, Pokemon"
   },
   {
     "Console": "Game Boy Color",
@@ -217,7 +217,7 @@
     "Ventes, en millions": 119,
     "Prix à la sortie, en USD": 80,
     "Descriptif": "Alors que le projet de future Game Boy est en cours, la sortie d'une console concurrente par l'ex concepteur de la Game Boy oblige Nintendo à sortir en express cette version, rétrocompatible avec des jeux pourtant antérieurs. Le succès phénoménal et inattendu de Pokemon permis d'en écouler un certain nombre.",
-    "Titres phares": ""
+    "Titres phares": "Des portages Game Boy"
   },
   {
     "Console": "Lynx",
@@ -239,7 +239,7 @@
     "Ventes, en millions": 1,
     "Prix à la sortie, en USD": 650,
     "Descriptif": "Console méconnue de cette génération, portant surnommée la \"Rolls des consoles\" de par son positionnement : ultra-puissante, réservée à une élite (hôtels, salles d'arcade), avec ses jeux de combat et arcade de grande qualité. A titre de comparaison, le prix d'un jeu sur cette plateforme était celui d'une console concurrente et les premiers modèles n'étaient disponibles qu'à la location vu les prix prohibiltifs, cependant les graphismes sont dignes d'une ou deux générations postérieures. Les collectionneurs se l'arrachent à présent à prix d'or.",
-    "Titres phares": ""
+    "Titres phares": "King of Fighters 98, Metal Slug"
   },
   {
     "Console": "3DO",
@@ -283,7 +283,7 @@
     "Ventes, en millions": 9,
     "Prix à la sortie, en USD": 400,
     "Descriptif": "Dure à programmer, cauchemard des éditeurs tiers, chère à produire, un prix de vente élevé et ayant fait les frais de grands troubles à sa direction (avec un vrai schisme USA et Japon), la console fut un échec pour la marque, amorçant son déclin malgré des débuts prometteurs. La sortie de la PlayStation, moins chère et peu de temps après, sera fatal.",
-    "Titres phares": ""
+    "Titres phares": "Panzer Dragoon, Virtua Fighter 2, Guardian Heroes"
   },
   {
     "Console": "Nintendo 64",
@@ -294,7 +294,7 @@
     "Ventes, en millions": 33,
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Seule console de cette génération à ne pas opter pour le CD-Rom pour des raisons de cout et de longs temps de chargement. Elle arrache la 2eme place de cette génération en capitalisation sur la mue 3D de ses titres phares et quelques rares bonnes surprises, qui influenceront grandement le media, surtout concernant le level deisgn et de multijoueur local. L'engouement des débuts s'essouflera assez vite cependant, face à la concurrence.",
-    "Titres phares": ""
+    "Titres phares": "Super Mario 64, Golden Eye, Banjo & Kazooie"
   },
   {
     "Console": "Dreamcast",
@@ -305,7 +305,7 @@
     "Ventes, en millions": "9,1",
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Chant du cygne du fabriquant qui avait pourtant de qualités techniques avangardistes, une programmation plus facile, des fonctionnalités tierces tournée vers le multimédia et internet ainsi que la reprise d'un catalogue riche en jeux d'arcade aux graphismes superbes et fidèles. Le fabriquant misa, comme à son habitude sur un déploiement rapide et orienté vers l'interational, ce qui donnera un excellent départ. Mais les dés étaient déjà jetés, et la précipitation sera fatale : le public se reserve pour la future PlayStation alors que des soucis fournisseurs l'handicaperont fortement, et que l'aspect online était bien trop avant gardiste...",
-    "Titres phares": ""
+    "Titres phares": "Shenmue, Sonic Adventure, Jet Set Radio"
   },
   {
     "Console": "Xbox",
@@ -316,7 +316,7 @@
     "Ventes, en millions": "24,5",
     "Prix à la sortie, en USD": 500,
     "Descriptif": "L'idée de départ est de porter lle savoir faire de la marque en bibliotèques PC multimédia, sur un support unique, simple à programmer. Son nom fait d'ailleurs référence à la librairie Direct X. Les acquisitions et partenariats de studios de développement donnent un catalogue riche, proche du monde du PC. Le matraquage marketing la positionne en console pour les adultes, à l'univers mature. La console, arrivée sur le tard, aura un décès prématuré pour laisser place à sa soeur qui doit prendre la concurrence de vitesse et corriger les erreurs de cette première expérience.",
-    "Titres phares": ""
+    "Titres phares": "Halo, Need for Speed Most Wanted, Dead or Alive"
   },
   {
     "Console": "PlayStation 2",
@@ -327,7 +327,7 @@
     "Ventes, en millions": "158,5",
     "Prix à la sortie, en USD": 300,
     "Descriptif": "Console qui fit plus que confirmer le succès de la 1ere, en devenant la plus vendue de l'histoire, dans un contexte pourtant hyperconcurrentiel. En profitant des succès très récents de son ainée et utilisant la main mise de la marque sur la technologie du DVD, elle s'impose comme véritable appareil multmedia de salon : lecteur de films, navigateur internet, jeux en ligne, films et video à la demande...",
-    "Titres phares": ""
+    "Titres phares": "Shadow of the Colossus, Resident Evil 4, GTA: San Andreas"
   },
   {
     "Console": "Game Boy Advance",
@@ -338,7 +338,7 @@
     "Ventes, en millions": "81,5",
     "Prix à la sortie, en USD": 100,
     "Descriptif": "Designée par un français, son développement fut laborieux et sa durée de vie limitée par sa propre héritière, mise en avant pour ses fonctions 3D faisant jeu égal avec la concurrence. Un prix toujours maitrisé, une bonne autonomie, une ludothèque solide de classiques revisités mais aussi riche d'adaptations de jeux cantonnés au marché nippon sur NES/SNES en font une console intéressante.",
-    "Titres phares": ""
+    "Titres phares": "Advance Wars, Castlevania: Ario of Sorrow, Metroid: Zeo Mission"
   },
   {
     "Console": "GameCube",
@@ -349,7 +349,7 @@
     "Ventes, en millions": "21,8",
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Console qui revient sur les erreurs précédentes de la marque avec la version 64 : persistance du format cartouche, délaissement des éditeurs tiers. La convivialité avec le multi local et l'accessibilité (y compris pour les programmeurs) sont mis en avant, au détriment d'autres de la puissance matérielle. Le manque d'exclusivités, l'impossibilité de portage des titres trop gourmands présents chez la concurrence et l'absence de fonctionnalités multimédias très présentes chez les autres consoles et une sortie trop précoce en feront un semi-échec.",
-    "Titres phares": ""
+    "Titres phares": "Mario 4 Double Dash !, Super Smash Bros Melee, Luigi's Mansion"
   },
   {
     "Console": "PlayStation 3",
@@ -360,7 +360,7 @@
     "Ventes, en millions": "87,5",
     "Prix à la sortie, en USD": 600,
     "Descriptif": "La console doit succéder au raz de marée historique que fut son ainée. C'est une version bien plus musclée mais complexe à programmer, avec des fonctionnalités online et de capture de mouvement qui est sont comprises à la fois par les développeurs et la clientèle. Dans une moindre mesure que pour la 360, la machine est réputée trop gourmande et enchaîne les histoires de surchauffe et plantages. L'absence de rétrocompatibilité promise freine son départ. Le succès viendra progressivement et sur le tard, grâce à de nombreuses mises à jour matérielles et logicielles du fabriquant, le retour des licences phares qui se faisaient attendre et l'offre multimédia s'appuyant sur la place de Sony dans l'audiovisuel : lecture de Blu-ray, PlayStation Store dématérialisé...",
-    "Titres phares": ""
+    "Titres phares": "The Last of Us, Uncharted 2, Dark Souls"
   },
   {
     "Console": "Wii",
@@ -371,7 +371,7 @@
     "Ventes, en millions": "101,5",
     "Prix à la sortie, en USD": 250,
     "Descriptif": "Console qui reprend les points forts de son ainée, tout en élimant les ratés : on garde le côté convivial mais on s'ouvre à internet avec le jeu en ligne. La convivialité sera le point fort de cette console familiale, qui mise tout sur la capture de mouvements sur ses simulations sportives et amusantes, au dépit de la puissance brute. Dès sa sortie, son prix est très accessible,",
-    "Titres phares": ""
+    "Titres phares": "Super Smash Bros, MArio Kart Wii, Xenoblade Chronicles"
   },
   {
     "Console": "Nintendo, 3DS & Nintendo DS",
@@ -382,7 +382,7 @@
     "Ventes, en millions": 154,
     "Prix à la sortie, en USD": 250,
     "Descriptif": "La DS ne révolutionne pas le marché des portables avec sa puissance, mais avec son double écran et stylet offrant de nouvelles perspectives de jeu inédites qui font mouche. La console s'approprie, en plus des joueurs réguliers, une nouvelle clientèle qui apprécie des titres qui tiennent plus de la réflexion, du drôle ou du logiciel utilitaire et profite de ses fonctionnalités bienvenues en son temps (lecteur MP3, navigateur internet). Ce  produit \"surprenant et unique\" est la 2eme console la plus vendue de l'histoire.",
-    "Titres phares": ""
+    "Titres phares": "Super Mario 3D Land, Animal Crossing: New Leaf, Mario Kart 7"
   },
   {
     "Console": "PSP",
@@ -393,7 +393,7 @@
     "Ventes, en millions": 81,
     "Prix à la sortie, en USD": 200,
     "Descriptif": "Aussi puissante que la console de salon PlayStation 2, la PSP bénéficie du très large catalogue de cette dernière, en théorie. Son orientation web et multimédia fut limitée par le format propriétaire peu répandu de son fabriquant, le UMD, que les majors du cinéma ne suvirent pas.",
-    "Titres phares": ""
+    "Titres phares": "Metal Gear Solid: Peace Walker, Daxter, Whipeout Pulse"
   },
   {
     "Console": "Xbox 360",
@@ -404,7 +404,7 @@
     "Ventes, en millions": 84,
     "Prix à la sortie, en USD": 400,
     "Descriptif": "Sur cette génération, Microsoft tire le premier et mise sur son avancée pour enfin enterrer le tsunami historique PlayStation 2 et couper l'herbe sous le pied de Nintendo planche encore sur sa prochaine sortie. Riche de l'expérience de la première console, disposant toujours des ressources financières et matérielles du monde du PC, la société accouche d'un monstre de puissance. Mais ce surarmement se fait au dépit de la stabilité : la console est très bruyante, surchauffe, tombe en panne, ce qui entachera l'image de la marque. Mais le rendu graphique des jeux d'action, de sport et de courses s'approche du réel et la console talonne plus que jamais son adversaire Sony, sur cette génération.",
-    "Titres phares": ""
+    "Titres phares": "Fallout 3, BioShock, GTA 5, Halo 3"
   },
   {
     "Console": "PlayStation 4",
@@ -415,7 +415,7 @@
     "Ventes, en millions": 117,
     "Prix à la sortie, en USD": 400,
     "Descriptif": "Après la vie difficile de la PS3, Sony revoit sa copie. Une architecture simplifiée et moins gourmande lui permet de sortir une console plus sûre, à prix plus agressif, qui renoue avec le succès. Mieux, la communication erratique au lancement de la Xbox One lui laisse un boulevard pour reprendre l'image de la marque faite par et pour son public, sans fioritures ou espionnage. Un spot humoristique corrosif de Sony à ce sujet devient viral dans la communauté. Une aubaine dans un marché où les ludothèques sont de plus en plus similaires avec des jeux sortants à des dates similaires, sur tous supports, y compris PC.",
-    "Titres phares": ""
+    "Titres phares": "Red Dead Redemption II, God of War, Uncharted 4"
   },
   {
     "Console": "Wii U",
@@ -426,7 +426,7 @@
     "Ventes, en millions": "13,5",
     "Prix à la sortie, en USD": 300,
     "Descriptif": "Après le succès de son ainée, la Wii U peine à convaincre et met en danger la firme financièrement avec ses faibles ventes. Le pari initial est risqué : attirer les joueurs réguliers qui snobbent la Wii, trop familiale. Un produit imcompris avec une communication désastruse, assez chere pour des capacités techniques de la génération précédente, concurrencée par son ainée encore en vente, et ne proposant presque que des adaptations de jeux déjà sortis au lancement en feront un désastre annoncé. Avec un nouvel écran gadget comme nouveauté, a console tient plus de l'extension que du renouveau.",
-    "Titres phares": ""
+    "Titres phares": "Zelda : The Wind Waker, Super Mario Maker, Super Smash Bros Wii U"
   },
   {
     "Console": "Xbox One",
@@ -436,8 +436,8 @@
     "Bits": "",
     "Ventes, en millions": 58,
     "Prix à la sortie, en USD": 500,
-    "Descriptif": "Microsoft rate rate sa communication lors de l'annonce de sa console : connexion internet obligatoire, capture de mouvements activée en permanence, revente et prêt de jeux interdits... La marque semble être tombée dans ses pires travers du monde du PC et la communauté des joeurs est vent debout avant même sa sortie.",
-    "Titres phares": ""
+    "Descriptif": "Microsoft rate sa communication lors de l'annonce de sa console : connexion internet obligatoire, capture de mouvements activée en permanence, revente et prêt de jeux interdits... La marque semble être tombée dans ses pires travers du monde du PC et la communauté des joeurs est vent debout avant même sa sortie.",
+    "Titres phares": "Red Dead Redemption II, Gear 5, Forza 4"
   },
   {
     "Console": "Switch",
@@ -448,7 +448,7 @@
     "Ventes, en millions": 121,
     "Prix à la sortie, en USD": 300,
     "Descriptif": "Après le nauvrage historique de la Wii U, Nintendo est en mauvaise passe. La marque réalise un tour de force avec un concept fort : une console portable, accessoirement de salon, unissant son savoir-faire historique dans les deux domaines. Au premier abord, les caractérisques très datées, et les première annonces, des rééditions portables de succès de la génération précédente, ont un effet mitigé. Cependant le pari est réussi : le retour des licences phares est un succès, en tirant parti des nouvelles fonctionnalités de la console, qui repoussent les limites de la convivialité en gommant la barrière entre le jeu coopératif local et en ligne.",
-    "Titres phares": ""
+    "Titres phares": "The legend of Zelda : Breath of the Wild, Super Mario Odyssey, Metroid Prime Remastered"
   },
   {
     "Console": "PS Vita",
@@ -458,8 +458,8 @@
     "Bits": "",
     "Ventes, en millions": "15,8",
     "Prix à la sortie, en USD": 250,
-    "Descriptif": "",
-    "Titres phares": ""
+    "Descriptif": "La PlayStation Vita ou PS Vita, est une console de jeux succède à la PlayStation Portable et aux différentes déclinaisons qui en découlent. Ses concurrents principaux sont la Nintendo 3DS de Nintendo et le marché du smartphone. Lors de sa conception, la Vita a été pensée pour associer l'expérience jeux vidéo à gros budgets, tel qu'on peut en trouver sur les consoles de salon, et celle des jeux « mobile », semblable a ceux alors en plein développement sur les smartphones et les tablettes.",
+    "Titres phares": "Perso 4, Guacamelee!, Shovel Knight"
   },
   {
     "Console": "PlayStation 5",
@@ -470,7 +470,7 @@
     "Ventes, en millions": "31,5",
     "Prix à la sortie, en USD": 500,
     "Descriptif": "Face à une concurrente musclée, mais qui a aussi gonflé sa ludothèque et efficacement sa distribution, la PlayStation n'a pas dit son dernier mot. En dépit d'un catalogue et de caractéristiques similaires, copiées sur l'architecture PC, la console garde quelques exclusivités trouvables nulle part ailleurs, qui en font l'ADN et l'hitoire de Sony Entertainment.",
-    "Titres phares": ""
+    "Titres phares": "God of War Ragnorok, The Last of Us ep. 1, Elden Ring"
   },
   {
     "Console": "Xbox Series S/X",
@@ -480,8 +480,8 @@
     "Bits": 64,
     "Ventes, en millions": "20,7",
     "Prix à la sortie, en USD": 500,
-    "Descriptif": "Comprend la version Series S, moins chère (300 USD)",
-    "Titres phares": "A la puissance physique toujours marquée, Microsoft se fournit un catalogue à présent massif. Avec des sorties simultanées à la PlayStation mais grâce au rachat de studios phares comme Bthesda et Blizzard Activision, la marque opte pour un système de location groupée à la demande, dont le consommateur semble rave. Une réussite technique et ludique. "
+    "Descriptif": "A la puissance physique toujours marquée, Microsoft se fournit un catalogue à présent massif. Avec des sorties simultanées à la PlayStation mais grâce au rachat de studios phares comme Bthesda et Blizzard Activision, la marque opte pour un système de location groupée à la demande, dont le consommateur semble rave. Une réussite technique et ludique.",
+    "Titres phares": "Halo Infinite, Forza 5, Elden Ring "
   },
   {
     "Console": "PC",
@@ -502,8 +502,8 @@
     "Bits": "",
     "Ventes, en millions": 1800,
     "Prix à la sortie, en USD": "",
-    "Descriptif": "",
-    "Titres phares": ""
+    "Descriptif": "iOS (initialement iPhone OS) est un système d'exploitation mobile créé et développé par la société américaine Apple exclusivement pour ses produits. Il alimente de nombreux appareils tels que l'iPhone, l'iPod touch et fonctionnait sur les iPad jusqu'en 2019. Il s'agit du deuxième système d'exploitation mobile le plus installé au monde, après Android. Il constitue la base de quatre autres systèmes d'exploitation : iPadOS, tvOS, watchOS et macOS. Il s'agit d'un logiciel propriétaire, bien que certaines parties soient en open source sous la licence Apple Public Source License et d'autres licences.",
+    "Titres phares": "Des portages, essentiellement"
   },
   {
     "Console": "Linux",
@@ -525,7 +525,7 @@
     "Ventes, en millions": "",
     "Prix à la sortie, en USD": "",
     "Descriptif": "MacOS est un système d’exploitation partiellement propriétaire développé et commercialisé par Apple depuis 1998. MacOS est le successeur de Mac OS Classic, la principale série des systèmes d'exploitation d'Apple depuis 1984. Contrairement à ses prédécesseurs, macOS fait partie de la famille des systèmes d'exploitation Unix. A ce titre, il compte peu de titres, mais plus que Linux grâce à un levier de négaciation avec les éditeurs à la sortie des titres. Paradoxalement, la société pourrait également bénéficier des efforts de Steam envers Linux, pour voir sa ludothèque grossir proportionnellement.",
-    "Titres phares": ""
+    "Titres phares": "Des portages, essentiellement"
   },
   {
     "Console": "Nintendo DSi",
@@ -535,7 +535,7 @@
     "Bits": "",
     "Ventes, en millions": "",
     "Prix à la sortie, en USD": "",
-    "Descriptif": "",
-    "Titres phares": ""
+    "Descriptif": "La Nintendo DSi, qui signifie « œil », référence aux caméras et aussi à « Je » en anglais, est une console de jeu Nintendo succédant à la Nintendo DS Lite, sortie en 2008. Deux caméras sont disponibles, un lecteur de cartes SD, un navigateur web Opera intégré et un lecteur audio supportant uniquement le format AAC. Les photos prises pourront alors être modifiées à l'aide de l'écran tactile et être sauvegardées sur une carte SD. Son catalogue est similaire à la DS.",
+    "Titres phares": "Des portages, essentiellement"
   }
 ]
