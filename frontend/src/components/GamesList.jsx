@@ -40,9 +40,9 @@ function GamesList({ setGameId, gameId, platform, genre }) {
         speed={800}
         loop
         className="my-swiper"
-        key={genre.id}
+        // key={genre.id}
         breakpoints={{
-          768: {
+          925: {
             slidesPerView: 2,
           },
           1350: {
@@ -53,32 +53,32 @@ function GamesList({ setGameId, gameId, platform, genre }) {
           },
         }}
       >
-        {data
-          .filter((gameChoice) => gameChoice.name.toLowerCase())
-          .map((game) => (
-            <div className="list-game">
-              <SwiperSlide key={platform.id}>
-                <button
-                  id="game-list-button"
-                  type="button"
-                  onClick={() => {
-                    setGameId(parseInt(game.id, 10));
-                  }}
-                >
-                  <Game
-                    key={gameId}
-                    game={game}
-                    data={data}
-                    gameId={gameId}
-                    setGameId={setGameId}
+        {data.length > 0 &&
+          data
+            // .filter((gameChoice) => gameChoice.name.toLowerCase())
+            .map((game) => (
+              <div className="list-game" key={game.id}>
+                <SwiperSlide key={game.id}>
+                  <button
+                    id="game-list-button"
+                    type="button"
                     onClick={() => {
                       setGameId(parseInt(game.id, 10));
                     }}
-                  />
-                </button>
-              </SwiperSlide>
-            </div>
-          ))}
+                  >
+                    <Game
+                      game={game}
+                      data={data}
+                      gameId={gameId}
+                      setGameId={setGameId}
+                      onClick={() => {
+                        setGameId(parseInt(game.id, 10));
+                      }}
+                    />
+                  </button>
+                </SwiperSlide>
+              </div>
+            ))}
       </Swiper>
     </div>
   );
