@@ -1,37 +1,29 @@
 import React from "react";
-import "../styles/footer.css";
+import "../styles/Footer.css";
+import logo from "../assets/Logo.png";
 
 function Footer() {
   return (
     <footer>
-      <section className="contact">
-        <div className="contact-container">
-          <div className="contact-list">
-            <div className="list">
-              <div id="contact-img">
-                <img src="./assets/img/logo-footer.png" alt="logo-footer" />
-              </div>
-            </div>
-            <div className="list">
-              <h5>Infos pratiques</h5>
-            </div>
-            <div className="list">
-              <h5>Nous contacter</h5>
-              <h6>Tél. 04 04 04 04 04</h6>
-              <h6>kritikz@caramail.fr</h6>
-              <h5 className="network">Nous suivre</h5>
-              <div className="footer-logos">
-                <i className="fab fa-twitter" />
-                <i className="fab fa-facebook" />
-                <i className="fab fa-linkedin" />
-                <i className="fab fa-instagram" />
-              </div>
-              <p className="copyright">2023 Kritikz © </p>
-              <p>Tous droits réservés.</p>
-            </div>
-          </div>
+      <div className="list">
+        <div id="logo">
+          <img src={logo} id="logo-footer" alt="logo-footer" />
         </div>
-      </section>
+      </div>
+      <div className="list">
+        <h3>Nous contacter</h3>
+        <br />
+        <p>Tél. 04 04 04 04 04</p>
+        <p>kritikz@caramail.fr</p>
+      </div>
+      <div>
+        <h3 className="network">A propos</h3>
+        <div>
+          <br />
+        </div>
+        <p className="copyright">2023 Kritikz © </p>
+        <p>Tous droits réservés.</p>
+      </div>
     </footer>
   );
 }

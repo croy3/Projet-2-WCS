@@ -12,7 +12,7 @@ function parseDescription(str) {
   );
 }
 
-function Presentation({ gameId }) {
+function Presentation({ gameId, setConsoleSumup }) {
   const [game, setGame] = useState([]);
   useEffect(() => {
     axios
@@ -34,7 +34,16 @@ function Presentation({ gameId }) {
         <p id="game-release">Released : {game.released}</p>
         <div id="game-platforms">
           {game.platforms?.map((element) => (
-            <p key={element.platform.name}> {element.platform.name} </p>
+            <button
+              type="button"
+              onClick={() => {
+                setConsoleSumup(element.platform.name);
+              }}
+              key={element.platform.name}
+            >
+              {" "}
+              {element.platform.name}{" "}
+            </button>
           ))}
         </div>
       </div>
@@ -43,6 +52,7 @@ function Presentation({ gameId }) {
 }
 Presentation.propTypes = {
   gameId: PropTypes.number.isRequired,
+  setConsoleSumup: PropTypes.func.isRequired,
 };
 
 export default Presentation;
