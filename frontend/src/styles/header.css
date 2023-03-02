@@ -1,4 +1,71 @@
-* {
+Skip
+  to
+  content
+  Search
+  or
+  jump
+  to…
+  Pull
+  requests
+  Issues
+  Codespaces
+  Marketplace
+  Explore
+  @MaxGuet
+  WildCodeSchool
+  /
+  2022-11-AURA-Project2-xX_KRITIKZ_Xx_du_69
+  Private
+  generated
+  from
+  WildCodeSchool/js-template-fullstack
+  Fork
+  your
+  own
+  copy
+  of
+  WildCodeSchool/2022-11-AURA-Project2-xX_KRITIKZ_Xx_du_69
+  Code
+  Issues
+  Pull
+  requests
+  1
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  Settings
+  Beta
+  Try
+  the
+  new
+  code
+  view
+  2022-11-AURA-Project2-xX_KRITIKZ_Xx_du_69/frontend/src/styles/header.css
+  @SpomMg
+  SpomMg
+  media
+  queries
+  on
+  header
+  done
+  Latest
+  commit
+  33dd80d
+  2
+  hours
+  ago
+  History
+  2
+  contributors
+  @SpomMg@MaxGuet
+  95
+  lines
+  (94 sloc)
+  1.99
+  KB
+  * {
   margin: 0;
   padding: 0;
 }
@@ -21,9 +88,8 @@
   grid-area: 1 / 1 / 2 / 2;
   opacity: 100%;
   max-height: 15rem;
-  /* position: fixed; */
   z-index: 0;
-  transform: translateX(650px) scale(0.7);
+  transform: translateX(250px) scale(0.9);
 }
 .header-title {
   text-align: center;
@@ -32,7 +98,35 @@
   opacity: 100%;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1130px) and (min-width: 800px) {
+  .header-main {
+    background: rgb(41, 0, 122);
+    background: linear-gradient(
+      0deg,
+      rgba(41, 0, 122, 0) 24%,
+      rgba(61, 7, 170, 0.2) 59%,
+      rgba(168, 36, 122, 1) 100%
+    );
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .header-logo {
+    grid-area: 1 / 1 / 2 / 2;
+    max-height: 15rem;
+    z-index: 0;
+    transform: translateX(150px) scale(0.8);
+  }
+  .header-title {
+    text-align: right;
+    align-self: center;
+    grid-area: 1 / 2 / 2 / 3;
+    transform: translateX(-100px) scale(0.8);
+  }
+}
+@media screen and (max-width: 800px) {
   .header-main {
     background: rgb(41, 0, 122);
     background: linear-gradient(
@@ -56,5 +150,13 @@
     align-self: center;
     grid-area: 1 / 2 / 2 / 3;
     transform: scale(0.5);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .header-logo {
+    grid-area: 1 / 1 / 2 / 2;
+    max-height: 15rem;
+    z-index: 0;
+    transform: translateX(500px);
   }
 }
