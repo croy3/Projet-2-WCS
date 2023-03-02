@@ -8,29 +8,41 @@ import ButtonGenre from "./ButtonGenre";
 function SortContainer({ setPlatform, setGenre, setPlatformName }) {
   const [genreList, setGenreList] = useState([]);
   const [platformList, setPlatformList] = useState([]);
-  const [pageSize, setPageSize] = useState(10);
-  const [textButton, setTextButton] = useState("Show More");
-  useEffect(() => {
-    axios
-      .get(
-        `https://api.rawg.io/api/genres?key=453247c1c78a4a88aa6594a59227801b`
-      )
-      .then((response) => setGenreList(response.data.results));
-  }, []);
+  const [pageGenre, setPageGenre] = useState(1);
+  const [pagePlatform, setPagePlatform] = useState(1);
 
   useEffect(() => {
     axios
       .get(
-        `https://api.rawg.io/api/platforms?key=453247c1c78a4a88aa6594a59227801b&page_size=${pageSize}&ordering=released`
+        `https://api.rawg.io/api/genres?key=453247c1c78a4a88aa6594a59227801b&page_size=10&page=${pageGenre}`
+      )
+      .then((response) => setGenreList(response.data.results));
+  }, [pageGenre]);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.rawg.io/api/platforms?key=453247c1c78a4a88aa6594a59227801b&page_size=10&page=${pagePlatform}&ordering=released`
       )
       .then((response) => setPlatformList(response.data.results));
-  }, [pageSize]);
+  }, [pagePlatform]);
 
   return (
     <div id="sidebar">
-      {/* <h3>Plateforme</h3> */}
-
       <ul className="submenu">
+        {pagePlatform > 1 ? (
+          <button
+            className="button bright-platform"
+            type="button"
+            onClick={() => {
+              setPagePlatform(pagePlatform - 1);
+            }}
+          >
+            {" "}
+            Previous page
+          </button>
+        ) : null}
+
         {platformList.map((platform) => (
           <ButtonPlatform
             platform={platform}
@@ -45,26 +57,33 @@ function SortContainer({ setPlatform, setGenre, setPlatformName }) {
             id={`${platform.i}`}
           />
         ))}
-        <button
-          className="button bright-platform"
-          type="button"
-          onClick={() => {
-            if (pageSize === 10) {
-              setPageSize(pageSize + 30);
-              setTextButton("Show Less");
-            } else {
-              setPageSize(pageSize - 30);
-              setTextButton("Show More");
-            }
-          }}
-        >
-          {" "}
-          {textButton}
-        </button>
+        {pagePlatform < 6 ? (
+          <button
+            className="button bright-platform"
+            type="button"
+            onClick={() => {
+              setPagePlatform(pagePlatform + 1);
+            }}
+          >
+            {" "}
+            Next Page
+          </button>
+        ) : null}
       </ul>
-      {/* <h3>Genre</h3> */}
 
       <ul className="submenu">
+        {pageGenre > 1 ? (
+          <button
+            className="button genre-button bright-genre"
+            type="button"
+            onClick={() => {
+              setPageGenre(pageGenre - 1);
+            }}
+          >
+            {" "}
+            Previous page
+          </button>
+        ) : null}
         {genreList.map((genre) => (
           <ButtonGenre
             genre={genre}
@@ -77,6 +96,18 @@ function SortContainer({ setPlatform, setGenre, setPlatformName }) {
             className=" button genre-button"
           />
         ))}
+        {pageGenre < 2 ? (
+          <button
+            className="button genre-button bright-genre"
+            type="button"
+            onClick={() => {
+              setPageGenre(pageGenre + 1);
+            }}
+          >
+            {" "}
+            Next Page
+          </button>
+        ) : null}
       </ul>
     </div>
   );
