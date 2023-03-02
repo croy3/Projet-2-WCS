@@ -28,6 +28,9 @@ h3 {
 
   #global-div {
     width: 100%;
-    background: url(wallpaper3.jpg) fixed;
+    background: url(wallpaper3.jpg) center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
