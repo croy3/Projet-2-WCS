@@ -5,10 +5,6 @@ import PropTypes from "prop-types";
 function ButtonGenre({ genre, setGenre }) {
   const [classTitle, setClassTitle] = useState(false);
 
-  function handleClick() {
-    setClassTitle(!classTitle);
-  }
-
   return (
     <button
       type="button"
@@ -16,7 +12,7 @@ function ButtonGenre({ genre, setGenre }) {
       ${classTitle ? "bright-genre" : null}`}
       onClick={() => {
         setGenre(genre.id);
-        handleClick();
+        setClassTitle(!classTitle);
       }}
     >
       {genre.name}
