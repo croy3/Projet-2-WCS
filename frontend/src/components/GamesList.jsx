@@ -12,7 +12,7 @@ import Game from "./Game";
 import "../styles/App.css";
 import "../styles/list.css";
 
-function GamesList({ setGameId, gameId, platform, genre }) {
+function GamesList({ setGameId, gameId, platform, genre, searchValue }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -24,9 +24,22 @@ function GamesList({ setGameId, gameId, platform, genre }) {
           setData(res.data.results);
         });
     }, 700);
+    return () => clearTimeout(timeout);
+  }, [genre, platform]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      axios
+        .get(
+          `https://api.rawg.io/api/games?key=453247c1c78a4a88aa6594a59227801b&search=${searchValue}`
+        )
+        .then((res) => {
+          setData(res.data.results);
+        });
+    }, 700);
 
     return () => clearTimeout(timeout);
-  }, [platform, genre]);
+  }, [searchValue]);
 
   return (
     <div id="list">
@@ -55,7 +68,7 @@ function GamesList({ setGameId, gameId, platform, genre }) {
       >
         {data.length > 0 &&
           data
-            // .filter((gameChoice) => gameChoice.name.toLowerCase())
+            .filter((gameChoice) => gameChoice.name.toLowerCase())
             .map((game) => (
               <div className="list-game" key={game.id}>
                 <SwiperSlide key={game.id}>
@@ -91,4 +104,5 @@ GamesList.propTypes = {
   gameId: PropType.number.isRequired,
   platform: PropType.number.isRequired,
   genre: PropType.number.isRequired,
+  searchValue: PropType.string.isRequired,
 };
