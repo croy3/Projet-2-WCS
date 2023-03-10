@@ -1,0 +1,209 @@
+:root {
+  --button-color-pink: hsl(317deg 100% 79%);
+  --button-color-purple: hsl(274deg 100% 84%);
+  --input-color: #f2469f;
+}
+
+* {
+  list-style: none;
+  color: antiquewhite;
+  background: none;
+}
+
+#sidebar {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.submenu {
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  gap: 20px;
+}
+
+.button {
+  height: 1.6rem;
+  font-size: 1rem;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--button-color-pink);
+  border: var(--button-color-pink) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125 rgba(255, 247, 247, 0.5), 0 0 0.45 currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--button-color-pink),
+    0 0 0.5em 0 var(--button-color-pink);
+
+  position: relative;
+  transition: background-color 200ms linear;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  background: var(--button-color-pink);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.button:hover {
+  background: var(--button-color-pink);
+  color: rgb(22, 6, 37);
+  text-shadow: none;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 2em 0.5em var(--button-color-pink);
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.button:hover::after {
+  opacity: 1;
+}
+
+.genre-button {
+  color: var(--button-color-purple);
+  border: hsl(274, 100%, 54%) 0.125em solid;
+  box-shadow: inset 0 0 0.5em 0 hsl(274, 100%, 54%),
+    0 0 0.5em 0 hsl(274, 100%, 54%);
+  color: hsl(274, 100%, 54%);
+}
+
+.genre-button::before {
+  background: hsl(274, 100%, 54%);
+}
+
+.genre-button:hover {
+  background: hsl(274, 100%, 54%);
+}
+
+.genre-button::after {
+  box-shadow: 0 0 2em 0.5em hsl(274, 100%, 54%);
+}
+
+.bright-platform {
+  background: var(--button-color-pink);
+  color: rgb(22, 6, 37);
+  text-shadow: none;
+}
+
+.bright-genre {
+  background: var(--button-color-purple);
+  color: rgb(22, 6, 37);
+  text-shadow: none;
+}
+
+.chosen-filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.input-style {
+  height: 1.6rem;
+  font-size: 1rem;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--input-color);
+  border: var(--input-color) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125 rgba(255, 247, 247, 0.5), 0 0 0.45 currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--input-color),
+    0 0 0.5em 0 var(--input-color);
+}
+
+.input-style:hover {
+  cursor: text;
+}
+
+.input-style::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 2em 0.5em var(--input-color);
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.input-style::before {
+  content: "";
+  position: absolute;
+  background: var(--input-color);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 10;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 560px) {
+  #sidebar {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1%;
+  }
+
+  .button {
+    width: 60%;
+    font-size: 0.5rem;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+  }
+  .input-style {
+    width: 60%;
+    align-self: center;
+  }
+}
